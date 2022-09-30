@@ -1,0 +1,17 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h2>Confirm Delete</h2>
+</div>
+
+<div class="form-wrapper">
+    <form method="post" action="">
+    {% csrf_token %}
+    {{form}}
+    <p>Are you sure ?</p>
+    <input class="button" type="submit" value="Delete">
+    </form>
+</div>
+
+{% endblock %}
